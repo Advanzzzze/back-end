@@ -5,7 +5,7 @@
 To use the repository, clone the repository using:
 ```bash
 # With HTTPS
-git clone git@gitlab.com:echope/echope-front.git
+git clone https://github.com/Advanzzzze/back-end.git
 
 # With SSH
 git clone git@github.com:Advanzzzze/back-end.git

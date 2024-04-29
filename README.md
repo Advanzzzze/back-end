@@ -1,5 +1,25 @@
 # Imobiliary Server
 
+## Node Version
+
+To run this project, your node version must be 20.12.0+. Caso você esteja em uma versão anterior, execute os seguintes passos:
+
+1. Verifique se você tem a versão 20.12.0+ instalada executando:
+```bash
+nvm list
+```
+
+2. Caso não tenha, execute:
+```bash
+nvm install lts
+nvm use
+```
+
+3. Caso já tenha a versão 20.12.0+ instalada, apenas execute:
+```bash
+nvm use
+```
+
 ## Run ther server and other commands
 
 1. With Node Package Manager (NPM):

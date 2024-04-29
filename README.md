@@ -1,21 +1,34 @@
 # Imobiliary Server
 
+## Clone Repository
+
+To use the repository, clone the repository using:
+```bash
+git clone git@gitlab.com:echope/echope-front.git
+cd back-end
+```
+
+## Install all dependencies
+```bash
+npm install
+```
+
 ## Node Version
 
 To run this project, your node version must be 20.12.0+. Caso você esteja em uma versão anterior, execute os seguintes passos:
 
-1. Verifique se você tem a versão 20.12.0+ instalada executando:
+1. Make sure you have version 20.12.0+ installed by running:
 ```bash
 nvm list
 ```
 
-2. Caso não tenha, execute:
+2. If not, run:
 ```bash
 nvm install lts
 nvm use
 ```
 
-3. Caso já tenha a versão 20.12.0+ instalada, apenas execute:
+3. If you already have version 20.12.0+ installed, just run:
 ```bash
 nvm use
 ```

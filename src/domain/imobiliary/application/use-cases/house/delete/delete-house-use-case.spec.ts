@@ -36,4 +36,23 @@ describe(`#${DeleteHouseUseCase.name}`, () => {
     expect(allHousesRegisteres).toHaveLength(2);
     expect(allHousesRegisteres[0].id.toValue()).toEqual('1');
   });
+
+  it('should be able to return null if has two houses with the same id', async () => {
+    for (let i = 0; i < 2; i++) {
+      const house = House.create(
+        {
+          name: `Name - ${i}`,
+          stage: faker.number.int({ min: 0, max: 1 }),
+          type: faker.number.int({ min: 0, max: 2 }),
+        },
+        new UniqueEntityId(`${i}`),
+      );
+
+      await inMemoryHouseRepository.register(house);
+    }
+
+    const nullValue = await sut.execute('10');
+
+    expect(nullValue).toBeNull();
+  });
 });

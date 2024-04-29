@@ -16,7 +16,7 @@ describe(`#${UpdateHouseUseCase.name}`, () => {
     sut = new UpdateHouseUseCase(inMemoryHouseRepository);
   });
 
-  it.only('should be able to update any house data', async () => {
+  it('should be able to update any house data', async () => {
     for (let i = 0; i < 10; i++) {
       const house = House.create(
         {
@@ -33,5 +33,23 @@ describe(`#${UpdateHouseUseCase.name}`, () => {
 
     const houseTest = await inMemoryHouseRepository.readAll();
     expect(houseTest[0]?.name).toEqual('Custom name');
+  });
+
+  it('should be able to throw an erro when try to delete an inexisting id', async () => {
+    for (let i = 0; i < 10; i++) {
+      const house = House.create(
+        {
+          name: `Name - ${i}`,
+          stage: faker.number.int({ min: 0, max: 1 }),
+          type: faker.number.int({ min: 0, max: 2 }),
+        },
+        new UniqueEntityId(`${i}`),
+      );
+      inMemoryHouseRepository.register(house);
+    }
+
+    await expect(() =>
+      sut.execute({ name: 'Custom name' }, '10'),
+    ).rejects.toBeInstanceOf(Error);
   });
 });

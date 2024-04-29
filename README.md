@@ -12,12 +12,11 @@ git clone git@github.com:Advanzzzze/back-end.git
 
 # Or with GitHub CLI
 gh repo clone Advanzzzze/back-end
-
-cd back-end
 ```
 
 ## Install all dependencies
 ```bash
+cd back-end
 npm install
 ```
 

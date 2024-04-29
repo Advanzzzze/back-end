@@ -64,7 +64,7 @@ nvm use
   - `make studio`: It will open a drizzle bank manager
 
 O.B.S.: Whenever the database is started, a database management platform called
-Adminer (formerly phpMyAdmin) will automatically start, making it an alternative
+Adminer (formerly phpMyAdmin) will automatically start in http://localhost:8080, making it an alternative
 to Drizzle Studio
 
 ## Routes and use cases

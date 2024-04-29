@@ -36,3 +36,37 @@ to Drizzle Studio
 | POST          | :3333/house      | Create a house                             | true       | name, stage, type |
 | UPDATE        | :3333/house/:id  | Update some house data with the correct id | false      | ***************** |
 | DELETE        | :3333/house/:id  | Delete some house with the correct id      | false      | ***************** |
+
+## API Examples
+
+### House Routes
+
+1. GET - :3333/house
+![GET Method](./public/assets/get-all.png)
+
+2. GET - :3333/house/:id
+![GET Method](./public/assets/get-by-id.png)
+
+3. POST - :3333/house
+![GET Method](./public/assets/post.png)
+
+4. PUT - :3333/house/:id
+![GET Method](./public/assets/update.png)
+
+5. DELETE - :3333/house/:id
+![GET Method](./public/assets/delete.png)
+
+### Address Routes
+
+### Descriptions Routes
+
+## Technologies
+
+![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
+![Fastify](https://img.shields.io/badge/fastify-%23000000.svg?style=for-the-badge&logo=fastify&logoColor=white)
+![MySQL](https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white)
+![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
+![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
+![ESLint](https://img.shields.io/badge/ESLint-4B3263?style=for-the-badge&logo=eslint&logoColor=white)
+![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)
+![NPM](https://img.shields.io/badge/NPM-%23CB3837.svg?style=for-the-badge&logo=npm&logoColor=white)
